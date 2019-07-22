@@ -1,0 +1,55 @@
+{
+  "name": "",
+  "description": "",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">= 10.15.1",
+    "npm": ">= 6.4.1"
+  },
+  "homepage": ".",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "@types/react": "16.8.22",
+    "@types/react-dom": "16.8.4",
+    "@types/react-syntax-highlighter": "^10.2.1",
+    "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32",
+    "express": "^4.17.1",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-syntax-highlighter": "^11.0.2",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "theatre": "^0.2.0-dev.3",
+    "three": "^0.106.2",
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && rm -rf docs/ && mv build docs",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server:start": "node server/app.js",
+    "publish-demo": "yarn build && yarn run deploy"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
